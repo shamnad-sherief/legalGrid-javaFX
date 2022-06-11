@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="787.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.legalgrid.legalGridController">
+    <children>
+        <BorderPane layoutY="160.0" prefHeight="104.0" prefWidth="778.0">
+            <center>
+                <TextField fx:id="textField" prefHeight="26.0" prefWidth="473.0" promptText="Enter your keyword" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" />
+                    </BorderPane.margin>
+                </TextField>
+            </center>
+            <right>
+                <Button mnemonicParsing="false" onAction="#submitButton" prefHeight="26.0" prefWidth="159.0" text="Submit" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="50.0" right="60.0" />
+                    </BorderPane.margin>
+                </Button>
+            </right>
+            <opaqueInsets>
+                <Insets top="20.0" />
+            </opaqueInsets>
+        </BorderPane>
+        <TitledPane alignment="CENTER" prefHeight="43.0" prefWidth="778.0" text="LEGAL_GRID" textAlignment="JUSTIFY" textFill="#0625ec" textOverrun="CENTER_ELLIPSIS">
+            <content>
+                <MenuBar style="-fx-background-color: #7BCCB5;">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="HOME">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="ABOUT US">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="LOGIN">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="SIGNUP">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </content>
+        </TitledPane>
+        <Label fx:id="label1" layoutX="54.0" layoutY="277.0" prefHeight="191.0" prefWidth="620.0" />
+    </children>
+</AnchorPane>
+
